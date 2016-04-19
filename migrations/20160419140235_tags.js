@@ -6,10 +6,7 @@ exports.up = function(knex, Promise) {
 		t.dateTime('updatedAt').nullable();
 		t.dateTime('deletedAt').nullable();
 
-		t.text('coverLetter').notNull();
-		t.string('resumeUrl').notNull();
-		t.integer('userId').unsigned().notNull();
-		
+		t.string('name').notNull();
 		
 	});
 };
